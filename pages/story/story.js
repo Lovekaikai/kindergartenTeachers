@@ -5,14 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    page:50
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.getIndexList()
   },
 
   /**
@@ -21,7 +21,26 @@ Page({
   onReady: function () {
   
   },
+  getIndexList() {
+    console.log(this.data.page)
+    var that = this;
+    new Promise(function (resolve, reject) {
+      wx.request({
+        url: getApp().globalData.api + "?m=weimagetext&a=storylist&pagesize=" + that.data.page,
+        success: function (res) {
+          resolve(res)
+        }
+      })
+    }).then(function (res) {
+      console.log(res.data)
+      that.setData({
+        infoList: res.data
+      })
+      wx.hideNavigationBarLoading()
+    })
 
+
+  },
   /**
    * 生命周期函数--监听页面显示
    */

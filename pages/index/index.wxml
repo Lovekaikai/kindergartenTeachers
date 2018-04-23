@@ -6,7 +6,7 @@
   <view class='story'>
     <text>推荐故事</text>
   </view>
-  <block wx:for="{{infoList}}" scroll-x="false">
+  <navigator url="/pages/detail/detail?id={{item.id}}"  wx:for="{{infoList}}" scroll-x="false">
     <view class="list-item">
       <view class='story-title'>
         {{item.Title}}
@@ -19,5 +19,5 @@
         <image class='images-top' src='../../images/pay.png'></image>
       </view>
     </view>
-  </block>
+  </navigator>
 </view>

@@ -1,2 +1,10 @@
-<!--pages/teach/teach.wxml-->
-<text>pages/teach/teach.wxml</text>
+<view class='container1' wx:for="{{ListArr}}">
+  <view class='item'>
+    <view class='left'>
+      <image src='{{item.PicUrl}}'></image>
+    </view>
+    <view class='right'>
+      {{item.Description}}
+    </view>
+  </view>
+</view>

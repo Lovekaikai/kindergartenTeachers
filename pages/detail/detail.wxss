@@ -1,0 +1,54 @@
+.container1 {
+  padding-left: 20rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #3d464d;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 60rpx;
+  vertical-align: middle;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.test {
+  position: relative;
+  width: 600rpx;
+  height: 600rpx;
+  text-align: center;
+  
+}
+
+.mask {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  background-size: 30px 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 25px solid #f2f2f2;
+  margin: auto;
+  top: 30%;
+  left: 40%;
+}
+
+.circle {
+  margin: 20px auto;
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 50%;
+}
+.icon image{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 0 auto;
+}
+.detail_content{
+  margin-top:30rpx;
+  color:#3d464d;
+  font-size: 18px;
+}

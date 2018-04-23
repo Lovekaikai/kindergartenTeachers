@@ -3,15 +3,17 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/story/story",
-    "pages/teach/teach"
+    "pages/teach/teach",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#eee",
+    "navigationBarBackgroundColor": "black",
     "navigationBarTitleText": "幼教",
-    "onReachBottomDistance":"50px",
+    "onReachBottomDistance": "50px",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "list": [
@@ -19,22 +21,24 @@
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/home.png",
-        "selectedIconPath": "images/home1.png"
+        "selectedIconPath": "images/home1.png",
+        "color": "green"
       },
       {
         "pagePath": "pages/story/story",
         "text": "绘画故事",
         "iconPath": "images/sound.png",
-        "selectedIconPath": "images/sound1.png"
+        "selectedIconPath": "images/sound1.png",
+        "color": "green"
       },
       {
         "pagePath": "pages/teach/teach",
         "text": "教育",
         "iconPath": "images/info.png",
-        "selectedIconPath": "images/info1.png"
+        "selectedIconPath": "images/info1.png",
+        "color": "green"
       }
     ],
-    "backgroundColor": "grey",
-    "color": "white"
+    "backgroundColor": "grey"
   }
 }

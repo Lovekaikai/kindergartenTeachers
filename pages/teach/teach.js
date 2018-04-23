@@ -5,14 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    lastID:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.getlist()
   },
 
   /**
@@ -27,6 +27,19 @@ Page({
    */
   onShow: function () {
   
+  },
+  getlist(){
+    var that=this;
+      wx.request({
+        url: 'https://msyj.yftechnet.com/index.php?m=weimagetext&a=textlist&pagesize=10&id='+that.lastID,
+        success:function(res){
+          that.setData({
+            ListArr:res.data  
+          })
+          console.log(res)
+        }
+      })
+
   },
 
   /**

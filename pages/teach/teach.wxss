@@ -1,1 +1,29 @@
 /* pages/teach/teach.wxss */
+.container1{
+  margin: 20px 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid saddlebrown;
+  padding-bottom:20px;
+  height: 70px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  /* box-sizing: border-box; */
+}
+.container1 .left{
+  float: left;
+  width:22%;
+}
+.container1 .left image{
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+.container1 .right{
+  float: left;
+  width: 70%;
+  padding-left:6px;
+  font-size: 27rpx;
+  vertical-align: middle;
+  line-height:25px;
+  padding-top: 10px;
+}
