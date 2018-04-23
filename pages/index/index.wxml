@@ -1,0 +1,23 @@
+<view>
+  <image src='{{info.data.PicUrl}}'></image>
+  <view>
+    <text class='title'>{{info.data.Title}}</text>
+  </view>
+  <view class='story'>
+    <text>推荐故事</text>
+  </view>
+  <block wx:for="{{infoList}}" scroll-x="false">
+    <view class="list-item">
+      <view class='story-title'>
+        {{item.Title}}
+      </view>
+      <view class='story-content'>
+        {{item.Description}}
+      </view>
+      <view class='img-one'> 
+        <image src="{{item.PicUrl}}"></image>
+        <image class='images-top' src='../../images/pay.png'></image>
+      </view>
+    </view>
+  </block>
+</view>
